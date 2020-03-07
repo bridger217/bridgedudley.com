@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Button, Link, NavLink, withRouter } from 'react-router-dom'
-import { Image, Menu } from 'semantic-ui-react'
+import { Link, NavLink, withRouter } from 'react-router-dom'
+import { Button, Icon, Image, Menu } from 'semantic-ui-react'
 //TODO: make paths absolute
 import logo from '../../static/images/bridge-logo-trans.png'
 
@@ -12,7 +12,7 @@ const menuItems = [
 
 const contactItems = [
   {color: "black", icon: "github", link: "https://github.com/bridger217"},
-  {color: "linkedin", icon: "linkedin", link: "linkedin.com/in/bridgedudley"},
+  {color: "linkedin", icon: "linkedin", link: "https://linkedin.com/in/bridgedudley"},
   {color: "red", icon: "mail", link: "mailto:bridgedudley@gmail.com"}
 ];
 
@@ -45,7 +45,7 @@ class TopMenu extends Component {
                  src={logo} size='medium' onClick={this.handleLogoClick}/>
         </div>
         <div class="menu-padder">
-          <Menu>
+          <Menu stackable>
             {menuItems.map((item) => (
               <Menu.Item
                 as={NavLink}
@@ -57,13 +57,18 @@ class TopMenu extends Component {
                 {item.name}
               </Menu.Item>
             ))}
-            {contactItems.map((item) => (
-              <Menu.Item
-                right
-              >
-                <Button circular color='facebook' icon='facebook' />
-              </Menu.Item>
-            ))}
+              <Menu.Menu position='right'>
+                {contactItems.map((item) => (
+                  <Menu.Item
+                    right
+                    as="a"
+                    href={item.link}
+                    target="_blank"
+                  >
+                    <Button circular color={item.color} icon={item.icon} />
+                  </Menu.Item>
+                ))}
+              </Menu.Menu>
           </Menu>
         </div>
       </div>

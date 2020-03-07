@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Redirect, Route, Link} from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import AboutPage from './AboutPage';
+import Resume from './Resume'
 import TopMenu from './TopMenu';
-import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -15,9 +15,8 @@ class App extends Component {
             <Redirect to="/about" />
           </Route>
           <Route name="about" exact path="/about" component={AboutPage} />
-          <Route name="resume" exact path="/resume" component={Footer} />
+          <Route name="resume" exact path="/resume" component={Resume} />
           <Route name="blog" exact path="/blog" component={TopMenu} />
-          <Footer />
         </div>
       </Router>
     )

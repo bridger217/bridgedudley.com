@@ -22,3 +22,11 @@
   padding-bottom: 50px;
   padding-left: 10px;
 }
+
+.resume-inner {
+  display: inline-block;
+}
+
+.resume-wrapper {
+  text-align: center;
+}
