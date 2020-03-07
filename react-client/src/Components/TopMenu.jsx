@@ -7,7 +7,7 @@ import logo from '../../static/images/bridge-logo-trans.png'
 const menuItems = [
   {name: "About", link: "/about"},
   {name: "Resume", link: "/resume"},
-  {name: "Blog", link: "/blog"}
+  //{name: "Blog", link: "/blog"}
 ];
 
 const contactItems = [
