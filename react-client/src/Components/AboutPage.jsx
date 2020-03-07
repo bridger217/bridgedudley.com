@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import AboutCard from './AboutCard'
 
 class AboutPage extends Component {
   render() {
     return (
-      <div>
-        About page
+      <div class="about-card-wrapper">
+        <div class="about-card-inner">
+          <AboutCard />
+        </div>
       </div>
     )
   }

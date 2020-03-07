@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, withRouter } from 'react-router-dom'
+import { Button, Link, NavLink, withRouter } from 'react-router-dom'
 import { Image, Menu } from 'semantic-ui-react'
 //TODO: make paths absolute
 import logo from '../../static/images/bridge-logo-trans.png'
@@ -9,6 +9,13 @@ const menuItems = [
   {name: "Resume", link: "/resume"},
   {name: "Blog", link: "/blog"}
 ];
+
+const contactItems = [
+  {color: "black", icon: "github", link: "https://github.com/bridger217"},
+  {color: "linkedin", icon: "linkedin", link: "linkedin.com/in/bridgedudley"},
+  {color: "red", icon: "mail", link: "mailto:bridgedudley@gmail.com"}
+];
+
 
 class TopMenu extends Component {
 
@@ -48,6 +55,13 @@ class TopMenu extends Component {
                 onClick={this.handleItemClick}
               >
                 {item.name}
+              </Menu.Item>
+            ))}
+            {contactItems.map((item) => (
+              <Menu.Item
+                right
+              >
+                <Button circular color='facebook' icon='facebook' />
               </Menu.Item>
             ))}
           </Menu>
