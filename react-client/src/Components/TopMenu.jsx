@@ -39,13 +39,12 @@ class TopMenu extends Component {
   render() {
 
     return (
-      <div>
-        <div class="bridge-logo">
+      <Menu stackable>
+        <Menu.Menu>
+        <Menu.Item>
           <Image as={NavLink} to="/"
                  src={logo} size='medium' onClick={this.handleLogoClick}/>
-        </div>
-        <div class="menu-padder">
-          <Menu stackable size="massive">
+        </Menu.Item>
             {menuItems.map((item) => (
               <Menu.Item
                 as={NavLink}
@@ -57,21 +56,19 @@ class TopMenu extends Component {
                 {item.name}
               </Menu.Item>
             ))}
-              <Menu.Menu position='right'>
-                {contactItems.map((item) => (
-                  <Menu.Item
-                    right
-                    as="a"
-                    href={item.link}
-                    target="_blank"
-                  >
-                    <Button circular color={item.color} icon={item.icon} />
-                  </Menu.Item>
-                ))}
+
+              {contactItems.map((item) => (
+                <Menu.Item
+                  position="right"
+                  as="a"
+                  href={item.link}
+                  target="_blank"
+                >
+                  <Button circular color={item.color} icon={item.icon} />
+                </Menu.Item>
+              ))}
               </Menu.Menu>
-          </Menu>
-        </div>
-      </div>
+        </Menu>
     )
   }
 }

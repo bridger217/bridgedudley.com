@@ -24,15 +24,13 @@
   padding-top: 1em;
 }
 
+.contact-item-padder {
+  padding-left: 20px;
+}
+
 .golfing-image {
   border-right: 20px solid grey;
   border-left: 20px solid grey;
-}
-
-.menu-padder {
-  padding-top: 1em;
-  padding-right: 1em;
-  padding-left: 1em;
 }
 
 .resume-inner {
