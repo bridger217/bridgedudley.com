@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Redirect, Route, Link} from 'react-router-dom';
 import { browserHistory } from 'react-router';
-import AboutPage from './AboutPage';
-import Resume from './Resume'
+import AboutPage from './Pages/AboutPage';
+import BlogPage from './Pages/BlogPage';
+import ResumePage from './Pages/ResumePage'
 import TopMenu from './TopMenu';
 
 class App extends Component {
@@ -15,8 +16,8 @@ class App extends Component {
             <Redirect to="/about" />
           </Route>
           <Route name="about" exact path="/about" component={AboutPage} />
-          <Route name="resume" exact path="/resume" component={Resume} />
-          <Route name="blog" exact path="/blog" component={TopMenu} />
+          <Route name="resume" exact path="/resume" component={ResumePage} />
+          <Route name="blog" exact path="/blog" component={BlogPage} />
         </div>
       </Router>
     )

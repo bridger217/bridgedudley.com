@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
-import meGolfing from '../../static/images/megolfing.png'
+import meGolfing from '../../../../static/images/megolfing.png'
 
 class AboutCard extends Component {
   render() {

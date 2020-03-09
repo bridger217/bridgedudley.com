@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
-import resume from '../../static/images/resume.png';
+import resume from '../../../static/images/resume.png';
 
 //TODO: embed latex so this is more refactorable (important)
 
-class Resume extends Component {
+class ResumePage extends Component {
   render() {
     return (
       <div class="resume-wrapper">
@@ -16,4 +16,4 @@ class Resume extends Component {
   }
 }
 
-export default Resume;
+export default ResumePage;

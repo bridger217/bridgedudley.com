@@ -3,12 +3,25 @@
 }
 
 .about-card-wrapper {
+  padding-top: 4em;
   text-align: center;
 }
 
+.blog-list {
+  list-style: none;
+}
+
+.blog-list-item {
+  padding-bottom: 30px;
+}
+
+.blog-header-padder {
+  padding-top: 1.5em;
+}
+
 .bridge-logo {
-  padding-left: 20px;
-  padding-top: 20px;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 .golfing-image {
@@ -17,10 +30,9 @@
 }
 
 .menu-padder {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 50px;
-  padding-left: 10px;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .resume-inner {
@@ -29,4 +41,5 @@
 
 .resume-wrapper {
   text-align: center;
+  padding-top: 1.5em;
 }

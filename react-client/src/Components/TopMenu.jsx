@@ -7,7 +7,7 @@ import logo from '../../static/images/bridge-logo-trans.png'
 const menuItems = [
   {name: "About", link: "/about"},
   {name: "Resume", link: "/resume"},
-  //{name: "Blog", link: "/blog"}
+  {name: "Blog", link: "/blog"},
 ];
 
 const contactItems = [
@@ -45,7 +45,7 @@ class TopMenu extends Component {
                  src={logo} size='medium' onClick={this.handleLogoClick}/>
         </div>
         <div class="menu-padder">
-          <Menu stackable>
+          <Menu stackable size="massive">
             {menuItems.map((item) => (
               <Menu.Item
                 as={NavLink}
