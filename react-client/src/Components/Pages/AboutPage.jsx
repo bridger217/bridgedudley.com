@@ -7,6 +7,7 @@ class AboutPage extends Component {
       <div class="about-card-wrapper">
         <div class="about-card-inner">
           <AboutCard />
+          <AboutCard />
         </div>
       </div>
     )

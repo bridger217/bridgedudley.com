@@ -3,20 +3,24 @@
 }
 
 .about-card-wrapper {
-  padding-top: 4em;
+  padding-top: 7em;
   text-align: center;
 }
 
 .blog-list {
-  list-style: none;
+  position: absolute;
 }
 
 .blog-list-item {
-  padding-bottom: 30px;
+  position:absolute;
+  left:3.5em;
+  right:3.5em;
 }
 
 .blog-header-padder {
-  padding-top: 1.5em;
+  padding-top: 5em;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .bridge-logo {
@@ -39,5 +43,5 @@
 
 .resume-wrapper {
   text-align: center;
-  padding-top: 1.5em;
+  padding-top: 6em;
 }

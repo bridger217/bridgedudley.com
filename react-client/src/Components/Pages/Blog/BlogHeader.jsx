@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tab } from 'semantic-ui-react';
+import { Sticky, Tab } from 'semantic-ui-react';
 import BlogList from './BlogList';
 
 const panes = [

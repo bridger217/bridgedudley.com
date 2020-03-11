@@ -1,56 +1,26 @@
 import React, { Component } from 'react';
-import { List, Tab } from 'semantic-ui-react';
+import { Button, Card, Icon, Image, List } from 'semantic-ui-react';
+import blankimage from './../../../../static/images/bridge-logo-trans.png';
+
+const CardExampleFluid = () => (
+  <Card.Group>
+    <div class="blog-list-item">
+      <Card fluid color='red' header='Option 1' >
+        <Card.Content>
+          <Icon name="music" size="large"/>
+        </Card.Content>
+        <Card.Description>
+          description
+        </Card.Description>
+      </Card>
+    </div>
+  </Card.Group>
+)
 
 class BlogList extends Component {
   render() {
     return (
-      <ul class="blog-list">
-        <div class="blog-list-item">
-          <li>
-            <Tab.Pane>
-              <List size="massive">
-                <List.Item>
-                  <List.Icon name='github' size='large' verticalAlign='middle' />
-                  <List.Content>
-                    <List.Header as='a'>Semantic-Org/Semantic-UI</List.Header>
-                    <List.Description as='a'>Updated 10 mins ago</List.Description>
-                  </List.Content>
-                </List.Item>
-              </List>
-            </Tab.Pane>
-          </li>
-        </div>
-        <div class="blog-list-item">
-          <li>
-            <Tab.Pane>
-              <List size="massive">
-                <List.Item>
-                  <List.Icon name='github' size='large' verticalAlign='middle' />
-                  <List.Content>
-                    <List.Header as='a'>Semantic-Org/Semantic-UI</List.Header>
-                    <List.Description as='a'>Updated 10 mins ago</List.Description>
-                  </List.Content>
-                </List.Item>
-              </List>
-            </Tab.Pane>
-          </li>
-        </div>
-        <div class="blog-list-item">
-          <li>
-            <Tab.Pane>
-              <List size="massive">
-                <List.Item>
-                  <List.Icon name='github' size='large' verticalAlign='middle' />
-                  <List.Content>
-                    <List.Header as='a'>Semantic-Org/Semantic-UI</List.Header>
-                    <List.Description as='a'>Updated 10 mins ago</List.Description>
-                  </List.Content>
-                </List.Item>
-              </List>
-            </Tab.Pane>
-          </li>
-        </div>
-      </ul>
+      <CardExampleFluid />
     )
   }
 }

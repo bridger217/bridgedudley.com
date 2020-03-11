@@ -39,7 +39,7 @@ class TopMenu extends Component {
   render() {
 
     return (
-      <Menu stackable>
+      <Menu stackable fixed="top">
         <Menu.Item>
           <Image as={NavLink} to="/"
                  src={logo} size='small' onClick={this.handleLogoClick}/>
