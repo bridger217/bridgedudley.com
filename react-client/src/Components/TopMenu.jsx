@@ -40,34 +40,32 @@ class TopMenu extends Component {
 
     return (
       <Menu stackable>
-        <Menu.Menu>
         <Menu.Item>
           <Image as={NavLink} to="/"
-                 src={logo} size='medium' onClick={this.handleLogoClick}/>
+                 src={logo} size='small' onClick={this.handleLogoClick}/>
         </Menu.Item>
-            {menuItems.map((item) => (
+          {menuItems.map((item) => (
+            <Menu.Item
+              as={NavLink}
+              to={item.link}
+              name={item.name}
+              active={this.state.activeItem === item.name}
+              onClick={this.handleItemClick}
+            >
+              {item.name}
+            </Menu.Item>
+          ))}
+          <Menu.Menu position="right">
+            {contactItems.map((item) => (
               <Menu.Item
-                as={NavLink}
-                to={item.link}
-                name={item.name}
-                active={this.state.activeItem === item.name}
-                onClick={this.handleItemClick}
+                as="a"
+                href={item.link}
+                target="_blank"
               >
-                {item.name}
+                <Button circular color={item.color} icon={item.icon} />
               </Menu.Item>
             ))}
-
-              {contactItems.map((item) => (
-                <Menu.Item
-                  position="right"
-                  as="a"
-                  href={item.link}
-                  target="_blank"
-                >
-                  <Button circular color={item.color} icon={item.icon} />
-                </Menu.Item>
-              ))}
-              </Menu.Menu>
+          </Menu.Menu>
         </Menu>
     )
   }
