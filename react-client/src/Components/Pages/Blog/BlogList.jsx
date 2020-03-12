@@ -13,6 +13,30 @@ const CardExampleFluid = () => (
           description
         </Card.Description>
       </Card>
+      <Card fluid color='red' header='Option 1' >
+        <Card.Content>
+          <Icon name="music" size="large"/>
+        </Card.Content>
+        <Card.Description>
+          description
+        </Card.Description>
+      </Card>
+      <Card fluid color='red' header='Option 1' >
+        <Card.Content>
+          <Icon name="music" size="large"/>
+        </Card.Content>
+        <Card.Description>
+          description
+        </Card.Description>
+      </Card>
+      <Card fluid color='red' header='Option 1' >
+        <Card.Content>
+          <Icon name="music" size="large"/>
+        </Card.Content>
+        <Card.Description>
+          description
+        </Card.Description>
+      </Card>
     </div>
   </Card.Group>
 )

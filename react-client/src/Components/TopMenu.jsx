@@ -58,6 +58,8 @@ class TopMenu extends Component {
           <Menu.Menu position="right">
             {contactItems.map((item) => (
               <Menu.Item
+                class="right-item"
+                style={{top: '0.8em'}}
                 as="a"
                 href={item.link}
                 target="_blank"
