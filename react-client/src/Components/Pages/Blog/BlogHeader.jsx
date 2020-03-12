@@ -22,7 +22,7 @@ class BlogHeader extends Component {
   render() {
     return (
       <div class="blog-header-padder">
-        <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
+        <Tab style={{position: 'sticky'}} menu={{ secondary: true, pointing: true }} panes={panes} />
       </div>
     )
   }

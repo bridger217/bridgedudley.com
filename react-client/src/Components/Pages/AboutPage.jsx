@@ -4,10 +4,13 @@ import AboutCard from './About/AboutCard'
 class AboutPage extends Component {
   render() {
     return (
-      <div class="about-card-wrapper">
-        <div class="about-card-inner">
-          <AboutCard />
-          <AboutCard />
+      <div>
+        <div id="backgroundimage" />
+        <div class="about-card-wrapper">
+          <div class="about-card-inner">
+            <AboutCard />
+            <AboutCard />
+          </div>
         </div>
       </div>
     )

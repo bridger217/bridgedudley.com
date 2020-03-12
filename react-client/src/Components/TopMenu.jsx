@@ -39,7 +39,7 @@ class TopMenu extends Component {
   render() {
 
     return (
-      <Menu stackable fixed="top">
+      <Menu stackable fixed="top" class="bridge-menu">
         <Menu.Item>
           <Image as={NavLink} to="/"
                  src={logo} size='small' onClick={this.handleLogoClick}/>
@@ -58,7 +58,6 @@ class TopMenu extends Component {
           <Menu.Menu position="right">
             {contactItems.map((item) => (
               <Menu.Item
-                class="right-item"
                 style={{top: '0.8em'}}
                 as="a"
                 href={item.link}
