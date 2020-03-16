@@ -13,11 +13,15 @@ class App extends Component {
     return (
       <Router>
           <Container
+            class="background"
             style={{
                 width: '100vw',
                 height: '100vh',
                 backgroundSize: '100% 100%',
+                backgroundAttachment: 'fixed',
+                backgroundPosition: 'center',
                 backgroundRepeat: 'repeat',
+                backgroundSize: 'cover',
                 position: 'relative',
                 marginBottom: '-100px',
                 backgroundImage: `url(${background})`,
