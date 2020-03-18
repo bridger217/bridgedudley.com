@@ -26,12 +26,14 @@ class ResumePage extends Component {
     this.setState({ screenHeight: window.innerHeight });
     let node = document.getElementById("resume-wrapper");
     let nodeStyle = window.getComputedStyle(node);
-    let paddingTop = nodeStyle.getPropertyValue('padding-top').slice(0, -2);
+    let paddingTop = nodeStyle.getPropertyValue('top').slice(0, -2);
     let windowHeight = window.innerHeight;
     //TODO: remove hardcoded padding
-    let computedHeight = parseInt(windowHeight, 10) - parseInt(paddingTop, 10) + 50;
+    let computedHeight = parseInt(windowHeight, 10) - parseInt(paddingTop, 10) - 20;
     let computedHeightStr = computedHeight + "px";
     this.setState({ resumeHeight: computedHeightStr });
+    console.log(paddingTop);
+    console.log(windowHeight);
   }
 
   render() {

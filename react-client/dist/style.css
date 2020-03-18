@@ -54,6 +54,7 @@
 
 .resume-wrapper {
   text-align: center;
-  padding-top: 6em;
+  position: relative;
   overflow: scroll;
+  top: 7em;
 }
