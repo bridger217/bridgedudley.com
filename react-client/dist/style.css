@@ -13,15 +13,13 @@
   background-repeat: repeat;
 }
 
-.blog-list {
-  position: absolute;
+.blog-card {
+  width: 100%;
+  height: 20em;
 }
 
-.blog-list-item {
-  position:absolute;
-  left:3.5em;
-  right:3.5em;
-  top:10em;
+.blog-list {
+  position: absolute;
 }
 
 .blog-header-padder {
@@ -43,9 +41,9 @@
   padding-left: 20px;
 }
 
-.golfing-image {
-  border-right: 20px solid grey;
-  border-left: 20px solid grey;
+.profile-image {
+  position: fixed;
+  margin-left: -25em;
 }
 
 .resume-inner {

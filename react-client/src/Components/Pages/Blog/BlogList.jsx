@@ -3,152 +3,17 @@ import { Button, Card, Icon, Image, List } from 'semantic-ui-react';
 import blankimage from './../../../../static/images/bridge-logo-trans.png';
 
 const CardExampleFluid = () => (
-  <Card.Group>
-    <div class="blog-list-item">
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-      <Card fluid color='red' header='Option 1' >
-        <Card.Content>
-          <Icon name="music" size="large"/>
-        </Card.Content>
-        <Card.Description>
-          description
-        </Card.Description>
-      </Card>
-    </div>
-  </Card.Group>
+  <div class="blog-card" />
 )
 
 class BlogList extends Component {
   render() {
     return (
-      <CardExampleFluid />
+      <div>
+        <CardExampleFluid style={{background: "green"}}/>
+        <CardExampleFluid style={{background: "teal"}}/>
+        <CardExampleFluid style={{background: "blue"}}/>
+      </div>
     )
   }
 }

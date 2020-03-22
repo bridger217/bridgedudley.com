@@ -6,7 +6,7 @@ import AboutPage from './Pages/AboutPage';
 import BlogPage from './Pages/BlogPage';
 import ResumePage from './Pages/ResumePage';
 import TopMenu from './TopMenu';
-import background from '../../static/images/mtn-bgrd.jpg';
+import background from '../../static/images/abstract-art-artistic-background-1103970.jpg';
 
 class App extends Component {
   render() {
