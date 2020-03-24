@@ -10,9 +10,9 @@
 }
 
 .blog-card {
-  width: 40%;
+  width: 40em;
   height: 20em;
-  background: #659ad6;
+  background: #92daf7;
   border-radius: 25px;
 }
 
@@ -25,6 +25,21 @@
 .blog-card h3 {
   padding-top: 1.3em;
   text-align: center;
+}
+
+.blog-card:hover {
+  transform: scale(1.07);
+}
+
+.blog-post-row-inner {
+  position: relative;
+  display: inline-block;
+}
+
+.blog-post-row-wrapper {
+  text-align: center;
+  position: relative;
+
 }
 
 .blog-list {
@@ -69,8 +84,4 @@
   position: relative;
   overflow: scroll;
   top: 7em;
-}
-
-.script-logo {
-
 }
