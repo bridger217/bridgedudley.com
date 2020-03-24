@@ -12,7 +12,7 @@
 .blog-card {
   width: 40em;
   height: 20em;
-  background: #92daf7;
+  background: #00CDE9;
   border-radius: 25px;
 }
 
@@ -31,19 +31,15 @@
   transform: scale(1.07);
 }
 
-.blog-post-row-inner {
+.blog-list-inner {
   position: relative;
   display: inline-block;
 }
 
-.blog-post-row-wrapper {
+.blog-list-wrapper {
   text-align: center;
   position: relative;
-
-}
-
-.blog-list {
-  position: absolute;
+  top: 7em;
 }
 
 .blog-header-padder {

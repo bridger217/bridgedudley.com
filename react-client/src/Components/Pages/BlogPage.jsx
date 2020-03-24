@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import BlogHeader from './Blog/BlogHeader';
+import BlogList from './Blog/BlogList';
 
 class BlogPage extends Component {
   render() {
     return (
-      <BlogHeader />
+      <BlogList />
     )
   }
 }

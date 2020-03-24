@@ -38,7 +38,7 @@ class TopMenu extends Component {
   render() {
 
     return (
-      <Menu stackable fixed="top" class="bridge-menu" style={{backgroundColor: "#948a8a61"}}>
+      <Menu stackable fixed="top" class="bridge-menu" style={{backgroundColor: "rgb(199, 199, 199)"}}>
         <Menu.Item>
           <Image as={NavLink} to="/"
                  src={logo} size='small' onClick={this.handleLogoClick}/>
