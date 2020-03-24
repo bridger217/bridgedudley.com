@@ -6,7 +6,6 @@
 
 .about-card-wrapper {
   padding-top: 7em;
-  padding-left: 6em;
   text-align: center;
 }
 
@@ -51,9 +50,14 @@
   padding-left: 20px;
 }
 
-.profile-image {
-  position: fixed;
-  margin-left: -25em;
+.prof-image-inner {
+  display: inline-block;
+}
+
+.prof-image-wrapper {
+  text-align: center;
+  position: relative;
+  padding-bottom: 2.7em;
 }
 
 .resume-inner {
@@ -65,4 +69,8 @@
   position: relative;
   overflow: scroll;
   top: 7em;
+}
+
+.script-logo {
+
 }

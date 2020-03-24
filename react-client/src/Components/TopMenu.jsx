@@ -5,7 +5,6 @@ import { Button, Icon, Image, Menu } from 'semantic-ui-react'
 import logo from '../../static/images/bridge-logo-trans.png'
 
 const menuItems = [
-  {name: "About", link: "/about"},
   {name: "Resume", link: "/resume"},
   {name: "Blog", link: "/blog"},
 ];
@@ -33,7 +32,7 @@ class TopMenu extends Component {
   }
 
   handleLogoClick(e) {
-    this.setState({ activeItem: menuItems[0].name });
+    this.setState({ activeItem: "" });
   }
 
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import AboutCard from './About/AboutCard';
+import AboutCard from './Home/AboutCard';
 import background from '../../../static/images/mtn-bgrd.jpg';
 
-class AboutPage extends Component {
+class HomePage extends Component {
   render() {
     return (
         <div class="about-card-wrapper">
@@ -14,4 +14,4 @@ class AboutPage extends Component {
   }
 }
 
-export default AboutPage;
+export default HomePage;
