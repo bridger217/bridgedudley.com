@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
-import profImage from '../../../../static/images/golf-square.png';
+import profImage from '../../../../static/images/prof-pic.jpg';
 import scriptImage from '../../../../static/images/bridge-script-trans.png'
 
 class AboutCard extends Component {
@@ -9,7 +9,7 @@ class AboutCard extends Component {
       <div>
         <div class="prof-image-wrapper">
           <div class="prof-image-inner">
-            <Image src={profImage} circular size="small"/>
+            <Image src={profImage} circular size="medium"/>
           </div>
         </div>
         <div class="script-logo">
