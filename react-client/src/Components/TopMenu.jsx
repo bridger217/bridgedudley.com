@@ -4,9 +4,13 @@ import { Button, Icon, Image, Menu } from 'semantic-ui-react'
 //TODO: make paths absolute
 import logo from '../../static/images/bridge-logo-trans.png'
 
+// const menuItems = [
+//   {name: "Resume", link: "/resume"},
+//   {name: "Blog", link: "/blog"},
+// ];
+
 const menuItems = [
   {name: "Resume", link: "/resume"},
-  {name: "Blog", link: "/blog"},
 ];
 
 const contactItems = [

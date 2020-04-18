@@ -36,6 +36,34 @@ class BlogList extends Component {
                 />
               </Grid.Column>
             </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <BlogPreview
+                  title="This is the title of the blog post"
+                  description="And this is a little section that describes a bit more about the post."
+                />
+              </Grid.Column>
+              <Grid.Column>
+                <BlogPreview
+                  title="Anotha one."
+                  description="And this is a little section that describes a bit more about the post. The description on this one is a lot longer on person just to see how it looks."
+                />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <BlogPreview
+                  title="This is the title of the blog post"
+                  description="And this is a little section that describes a bit more about the post."
+                />
+              </Grid.Column>
+              <Grid.Column>
+                <BlogPreview
+                  title="Anotha one."
+                  description="And this is a little section that describes a bit more about the post. The description on this one is a lot longer on person just to see how it looks."
+                />
+              </Grid.Column>
+            </Grid.Row>
           </Grid>
         </div>
       </div>
